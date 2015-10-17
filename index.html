@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src= "appl.js"></script>
+	</head>
+<body>
+		<div id='formContainer'>
+			  <form id='employeeInfo'>
+			  	<label for='firstName'>First Name</label>
+			  	<input type='text' id='firstName' name='firstName' value='jason' placeholder = 'firstname'/>
+		  	
+			  	<label for='lastName'>Last Name</label>
+			  	<input type='text' id='lastName' name='lastName' value ='tenbrink'>
+
+			  	<label for='salary'>Salary</label>
+			  	<input type='text' name='salary' id='salary' value="23000" >
+
+			  	<label for='idNumber'>ID Number</label>
+			  	<input type='text' id='idNumber' name='idNumber' value=1>
+
+			  	<label for='jobTitle'>Job Title</label>
+			  	<input type='text' id='jobTitle' name='jobTitle' value='Master of the Universe'>
+
+			  	<input type='submit' value='submit'>
+			  </form> 
+		</div>
+
+		<div id='dataDisplayContainer'>
+			  <div id='salaryDiv'>
+			  	<p>Total Monthly Salaries</p>
+			  	<p id='totalSalary'>number</p>
+			  </div>
+
+			  <div id='employeeData'></div>
+		</div>
+	</body>
+	
+</html>
