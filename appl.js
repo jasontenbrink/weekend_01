@@ -34,9 +34,6 @@ $(document).ready(function(){
 		$(this).parent().remove();	//remove person from the DOM
 	});
 
-
-
-
 	$('[type=submit]').click();
 });
 
@@ -52,7 +49,6 @@ function makePersonDiv (personObj){
 	$personDiv.append('<p>' + personObj.idNumber + '</p>');
 	$personDiv.append('<p>' + personObj.jobTitle + '</p>');
 	$personDiv.append('<button class="deleteButton"> X </button>');
-	
 }
 
 function calcTotalSalary(employeeArray){
@@ -62,9 +58,3 @@ function calcTotalSalary(employeeArray){
 	}
 	return ('$'+counter.toFixed(2));
 }
-
-
-		//console.log($('[text=input]'));
-
-		// var $empDiv = $('#employeeData').append('<div></div>');
-		// $empDiv.append('<p>' + employeeArray[0]);

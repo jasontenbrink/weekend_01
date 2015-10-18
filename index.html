@@ -6,35 +6,25 @@
 		<script type="text/javascript" src= "appl.js"></script>
 	</head>
 <body>
-		<div id='formContainer'>
-			  <form id='employeeInfo'>
-			  	
-			  	<input type='text' id='firstName' name='firstName' value='jason' placeholder = 'First Name'/>
-		  	
-			  	
-			  	<input type='text' id='lastName' name='lastName' value ='tenbrink' placeholder = 'Last Name'>
+	<div id='formContainer'>
+	  <form id='employeeInfo'>
+	  	<input type='text' id='firstName' name='firstName' value='jason' placeholder = 'First Name'/>
+	  	<input type='text' id='lastName' name='lastName' value ='tenbrink' placeholder = 'Last Name'>
+	  	<input type='text' name='salary' id='salary' value="23000" placeholder = 'Salary'>
+	  	<input type='text' id='idNumber' name='idNumber' value=1 placeholder = 'ID Number'>
+	  	<input type='text' id='jobTitle' name='jobTitle' value='Master of the Universe' placeholder = 'Job Title'>
+	  	<input type='submit' value='submit'>
+	  </form> 
+	</div>
 
-			  
-			  	<input type='text' name='salary' id='salary' value="23000" placeholder = 'Salary'>
+	<div id='dataDisplayContainer'>
+	  <div id='salaryDiv'>
+	  	<p id='salaryStaticText'>Total Monthly Salaries: </p>
+	  	<p id='totalSalary'>number</p>
+	  </div>
 
-			  	
-			  	<input type='text' id='idNumber' name='idNumber' value=1 placeholder = 'ID Number'>
+	  <div id='employeeData'></div>
+	</div>
+</body>
 
-			
-			  	<input type='text' id='jobTitle' name='jobTitle' value='Master of the Universe' placeholder = 'Job Title'>
-
-			  	<input type='submit' value='submit'>
-			  </form> 
-		</div>
-
-		<div id='dataDisplayContainer'>
-			  <div id='salaryDiv'>
-			  	<p>Total Monthly Salaries: </p>
-			  	<p id='totalSalary'>number</p>
-			  </div>
-
-			  <div id='employeeData'></div>
-		</div>
-	</body>
-	
 </html>
