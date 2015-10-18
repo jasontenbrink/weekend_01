@@ -46,21 +46,21 @@ function makePersonDiv (personObj){
 
 	//console.log($personDiv.data("test"));
 	
-	$personDiv.append('<p>' + personObj.firstName + ',  </p>');
-	$personDiv.append('<p>' + personObj.lastName + ', </p>');
-	$personDiv.append('<p>' + personObj.salary + ', </p>');
-	$personDiv.append('<p>' + personObj.idNumber + ', </p>');
+	$personDiv.append('<p>' + personObj.firstName + '</p>');
+	$personDiv.append('<p>' + personObj.lastName + '</p>');
+	$personDiv.append('<p>$' + personObj.salary.toFixed(2) + '</p>');
+	$personDiv.append('<p>' + personObj.idNumber + '</p>');
 	$personDiv.append('<p>' + personObj.jobTitle + '</p>');
-	$personDiv.append('<button> x </button>');
+	$personDiv.append('<button class="deleteButton"> X </button>');
 	
 }
 
 function calcTotalSalary(employeeArray){
 	var counter = 0;
 	for (var i=0, x = employeeArray.length; i<x; i++){
-		counter += parseFloat(employeeArray[i].salary);
+		counter += parseFloat((employeeArray[i].salary)/12);
 	}
-	return counter;
+	return ('$'+counter.toFixed(2));
 }
 
 
