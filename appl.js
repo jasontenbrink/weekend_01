@@ -12,7 +12,12 @@ $(document).ready(function(){
 		var parsedNumber = parseFloat(parseFloat(personObj.salary).toFixed(2));
 		if( !(typeof parsedNumber === 'number' && !isNaN(parsedNumber)) ){ //if parsedNumber === number and also != NaN
 			alert("please leave out nonnumeric characters in the salary field");
-		}else{
+		} else if (personObj.idNumber===""){
+			alert("The employee ID Number cannot be blank.");
+		}
+
+		else{
+
 			personObj.salary = parsedNumber;
 			employeeArray.push(personObj); // add person to employee array
 			$('[type=text]').val(''); // reset form
@@ -32,6 +37,10 @@ $(document).ready(function(){
 		//console.log(employeeArray);
 		$('#totalSalary').text(calcTotalSalary(employeeArray));  //recalculate total salary
 		$(this).parent().remove();	//remove person from the DOM
+	});
+	$('#employeeData').on('mouseenter mouseleave', 'button', function(event){  //
+		console.log('mouseover');
+		$(this).toggleClass('buttonMouseover');
 	});
 
 	$('[type=submit]').click();
