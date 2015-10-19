@@ -34,7 +34,7 @@ input{
 }
 .person{
 	border-bottom: 1px solid rgba(5,5,5,0.1);
-	height: 30px;
+	height: 10%;
 }
 .person p{
 	display: inline-block;
